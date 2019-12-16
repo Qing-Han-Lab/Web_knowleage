@@ -1,0 +1,33 @@
+// @import "~taro-ui/dist/style/index.scss";
+
+.container {
+  text-align: center;
+}
+
+page {
+  font-family: 'PingFang-SC-Medium,PingFang-SC';
+}
+
+.platform-logo-jd {
+  background: url('./assets/images/home_icon.png') no-repeat left;
+  background-size: 36px 36px;
+  text-indent: 50px;
+}
+
+.platform-logo-pdd {
+  background: url('./assets/images/icon_pdd.png') no-repeat left;
+  background-size: 36px 36px;
+  text-indent: 50px;
+}
+
+.platform-logo-tmall {
+  background: url('./assets/images/icon_tmall.png') no-repeat left;
+  background-size: 36px 36px;
+  text-indent: 50px;
+}
+
+.platform-logo-tb {
+  background: url('./assets/images/icon_tb.png') no-repeat left;
+  background-size: 36px 36px;
+  text-indent: 50px;
+}

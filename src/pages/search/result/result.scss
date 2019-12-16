@@ -1,0 +1,271 @@
+.result-container {
+  width: 750px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  .selectbox {
+    width: 710px;
+    height: 84px;
+    border-radius: 8px;
+    background-color: #fff;
+    margin-bottom: 20px;
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    .selectitem {
+      width: 25%;
+      height: 100%;
+      text-align: center;
+      line-height: 84px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .itemtext {
+        color: #666;
+        font-size: 24px;
+
+        &.active {
+          color: #FB2C68;
+        }
+      }
+
+      .orderbox {
+        height: 22px;
+        width: 16px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        margin-left: 5px;
+
+        .ordertop {
+          width: 100%;
+          height: 10px;
+          background-image: url("../../../assets/ychImages/order.png");
+          background-size: 100% 100%;
+          transform: rotate(180deg);
+
+          &.selecttop {
+            background-image: url('../../../assets/ychImages/orderselect.png');
+            background-size: 100% 100%;
+            transform: rotate(0deg);
+          }
+        }
+
+        .orderdown {
+          width: 100%;
+          height: 10px;
+          background-image: url("../../../assets/ychImages/order.png");
+          background-size: 100% 100%;
+          transform: translateX(0px);
+
+          &.selectdown {
+            background-image: url('../../../assets/ychImages/orderselect.png');
+            background-size: 100% 100%;
+            transform: translateX(1px) rotate(180deg);
+          }
+        }
+      }
+    }
+  }
+
+  .itembox {
+    // width: 100%;
+    flex: 1;
+    // background-color: #fff;
+    overflow: auto;
+
+    .searchend-box{
+      margin-top: 36px;
+       width: 100%;
+       .searchnone{
+         width: 284px;
+         height: 332px;
+         margin: 0px auto;
+         Image{
+           width: 100%; height: 100%;
+         }
+       }
+       .searchtext{
+         color: #666;
+         font-size: 28px;
+         margin: 0px auto;
+         text-align: center;
+       }
+       .tosearchbtn{
+        width:220px;
+        height:60px;
+        background:rgba(251,44,104,1);
+        border-radius:30px;
+        margin: 26px auto 0px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        .searchlogo{
+          width: 36px;
+          height: 36px;
+          background-image: url("../../../assets/ychImages/searchLogo.png");
+          background-size: 100% 100%;
+        }
+        .tosearch{
+          width: 100px;
+          height: 40px;
+          background-image: url("../../../assets/ychImages/toSearch.png");
+          background-size: 100% 100%;
+        }
+       }
+    }
+
+    .recommenditem {
+      margin-left: auto;
+      margin-right: auto;
+      width: 710px;
+      height: 228px;
+      background: #fff;
+      border-radius: 8px;
+      margin-bottom: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+
+      .pic {
+        width: 228px;
+        height: 228px;
+
+        Image {
+          width: 100%;
+          height: 100%;
+        }
+      }
+
+      .sellcontent {
+        flex: 1;
+        height: 100%;
+        padding: 22px 22px 18px 16px;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+
+        .selltitle {
+          width: 455px;
+          height: 44px;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          font-size: 32px;
+          color: rgba(51, 51, 51, 1);
+        }
+
+        .moneycontent {
+          width: 455px;
+          height: 56px;
+          display: flex;
+          justify-content: space-between;
+          align-items: flex-end;
+          color: #fc2474;
+
+          .money {
+            font-size: 35px;
+            font-weight: bold;
+
+            .smallmoneylogo {
+              font-size: 20px;
+              display: inline;
+            }
+          }
+
+          .returnmoney {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+
+            .returnlogo {
+              width: 30px;
+              height: 30px;
+              background-image: url("../../../assets/ychImages/returnMoney.png");
+              background-size: 100% 100%;
+              margin-right: 6px;
+            }
+
+            .smallmoneylogo2 {
+              font-size: 20px;
+            }
+
+            .returnmoneynum {
+              font-weight: 500;
+              color: rgba(252, 89, 104, 1);
+              font-size: 25px;
+            }
+          }
+        }
+
+        .morecontent {
+          height: 36px;
+          width: 455px;
+          display: flex;
+          justify-content: space-between;
+          align-items: flex-end;
+
+          .paltform {
+            height: 36px;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            flex-wrap: nowrap;
+            Image {
+             width: 36px;
+             height: 36px;
+             margin-right: 14px;
+            }
+            .time {
+              font-size: 20px;
+              font-weight: 500;
+              color: rgba(153, 153, 153, 1);
+            }
+          }
+          .likeandmessage{
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            flex-wrap: nowrap;
+            .like {
+              width: 56px;
+              height: 28px;
+              background-image: url("../../../assets/ychImages/heart.png");
+              background-repeat: no-repeat;
+              background-position: 0 -3px;
+              background-size: 30px 32px;
+              font-size: 20px;
+              font-weight: 500;
+              color: rgba(153, 153, 153, 1);
+              text-indent: 35px;
+              margin-right: 28px;
+            }
+  
+            .massage {
+              width: 56px;
+              height: 28px;
+              background-image: url("../../../assets/ychImages/massage.png");
+              background-repeat: no-repeat;
+              background-position: 0 center;
+              background-size: 28px 28px;
+              font-size: 20px;
+              font-weight: 500;
+              color: rgba(153, 153, 153, 1);
+              text-indent: 35px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

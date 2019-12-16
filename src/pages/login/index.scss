@@ -1,0 +1,44 @@
+.login {
+  overflow: hidden;
+
+  .login-logo {
+    width: 154px;
+    height: 154px;
+    margin: 100px auto 28px;
+
+    image {
+      width: 154px;
+      height: 154px;
+    }
+  }
+
+  .login-text {
+    font-size: 32px;
+    color: #333;
+    text-align: center;
+  }
+
+  .login-wechat {
+    width: 710px;
+    height: 90px;
+    border-radius: 8px;
+    background-color: #FB2C68;
+    margin: 212px auto 0px;
+    text-align: center;
+    color: #fff;
+    font-size: 32px;
+    line-height: 90px;
+  }
+  .login-phone{
+    width: 710px;
+    height: 90px;
+    font-size: 30px;
+    color: #CCCCCC;
+    margin-top: 36px;
+    border: 0;
+    background: transparent;
+    &:after {
+      border: 0;
+    }
+  }
+}

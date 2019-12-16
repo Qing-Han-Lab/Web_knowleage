@@ -1,0 +1,19 @@
+{
+	"miniprogramRoot": "dist/",
+	"projectname": "mz-mini-app",
+	"description": "application",
+	"appid": "wx45931a6a772f2125",
+	"setting": {
+		"urlCheck": true,
+		"es6": false,
+		"postcss": false,
+		"minified": false
+	},
+	"compileType": "miniprogram",
+	"simulatorType": "wechat",
+	"simulatorPluginLibVersion": {},
+	"backup": "wx66b0802fdb71fb59",
+	"backup2": "wx45931a6a772f2125",
+	"libVersion": "2.9.2",
+	"condition": {}
+}

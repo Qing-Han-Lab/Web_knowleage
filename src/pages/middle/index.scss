@@ -1,0 +1,532 @@
+.product1-container{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #F7F7F7;
+  .product1-container-itembox{
+    flex: 1;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+    .itemshowbox{
+      width: 750px;
+      height: 750px;
+      position: relative;
+      .pageselectbox{
+        width: 112px;
+        height: 48px;
+        position: absolute;
+        right: 0;
+        bottom: 56px;
+        background-image: url("../../assets/ychImages/pageselect.png");
+        background-size: 100% 100%;
+        z-index: 5;
+        text-align: center;
+        line-height: 48px;
+        font-size: 30px;
+        color: #fff;
+        .nowpage{
+          font-size: 42px;
+          display: inline;
+        }
+      }
+      .swiper{
+        width: 100%;
+        height: 100%;
+        .swiperitem{
+          width: 100%;
+          height: 100%;
+        }
+        .img{
+          width: 750px;
+          height: 750px;
+        }
+      }
+    }
+    .itemtitle{
+      width: 698px;
+      height: 112px;
+      margin: 24px auto 0px;
+      font-size:40px;
+      font-weight:500;
+      color:rgba(51,51,51,1);
+      letter-spacing: 1px;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 2;
+      overflow: hidden;
+      .paltform{
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+        background-image: url("../../assets/ychImages/JD_Logo.png");
+        background-size: 100% 100%;
+        margin-right: 10px;
+      }
+    }
+    .sellbox{
+      width: 698px;
+      height: 66px;
+      margin: 22px auto 0px;
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-end;
+      flex-wrap: nowrap;
+      position: relative;
+      .nowmoney{
+        width: 180px;
+        height: 66px;
+        color: #FB2C68;
+        font-size:51px;
+        font-weight: bold;
+        .moneylogo{
+          display: inline;
+          font-size: 26px;
+        }
+      }
+      .oldmoney{
+        width: 120px;
+        height: 40px;
+        font-size:28px;
+        font-weight:500;
+        color:rgba(194,194,194,1);
+        text-decoration: line-through;
+        margin-left: 40px;
+      }
+      .havesell{
+        font-size:28px;
+        font-weight:500;
+        color:rgba(177,177,177,1);
+        position: absolute;
+        bottom: 0;
+        right: 0;
+      }
+    }
+    .store{
+      width:748px;
+      height:194px;
+      background:rgba(255,255,255,1);
+      margin: 28px auto 5px;
+      overflow: hidden;
+      .storetitle{
+        width: 100%;
+        height: 96px;
+        padding: 0px 10px;
+        margin-top: 18px;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        position: relative;
+        .storelogo{
+          width: 70px;
+          height: 70px;
+          Image{
+            width: 100%;
+            height: 100%;
+          }
+        }
+        .storename{
+          color:#333;
+          font-size:36px;
+          font-weight:500;
+          margin-left: 32px;
+        }
+        .gostore{
+          position: absolute;
+          right: 10px;
+          bottom: 26px;
+          width:150px;
+          height:44px;
+          background:linear-gradient(217deg,rgba(150,104,214,1) 0%,rgba(252,75,126,1) 100%);
+          border-radius:22px;
+          color: #fff;
+          text-align: center;
+          line-height: 44px;
+          font-size: 24px;
+        }
+      }
+      .tellstore{
+        width: 100%;
+        padding: 0px 10px;
+        box-sizing: border-box;
+        height: 30px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .tellitem{
+          width: 180px;
+          height: 100%;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          font-size:20px;
+          .telltext{
+             font-weight:500;
+             color:rgba(51,51,51,0.6);
+          }
+          .telllev{
+           width:30px;
+           height:30px;
+           text-align: center;
+           color: #fff;
+           line-height: 30px;
+           border-radius:15px;
+           &.high{
+             background: #FB2C68;
+           }
+           &.middel{
+             background: #FDB81C;
+           }
+           &.small{
+             background: #CCCCCC;
+           }
+          }
+        }
+      }
+    }
+    .product-detail-title {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      font-size: 32px;
+      height: 100px;
+      line-height: 100px;
+      color: #fb2c68;
+      .product-detail-title-text {
+        position: relative;
+        &::before {
+          content: "";
+          display: block;
+          width: 48px;
+          height: 16px;
+          background: url("../../assets/ychImages/icon_detail.png") no-repeat center
+            center;
+          background-size: 100%;
+          position: absolute;
+          top: 50%;
+          left: -60px;
+          transform: translate3d(0, -50%, 0);
+        }
+        &::after {
+          content: "";
+          display: block;
+          width: 48px;
+          height: 16px;
+          background: url("../../assets/ychImages/icon_detail.png") no-repeat center
+            center;
+          background-size: 100%;
+          position: absolute;
+          top: 50%;
+          right: -60px;
+          transform: translate3d(0, -50%, 0);
+        }
+      }
+    }
+    .showpic{
+      width: 750px;
+      Image{
+        width: 750px;
+        height: 750px;
+      }
+    }
+    .couponbox{
+      width: 680px;
+      height: 196px;
+      margin: 84px auto 0px;
+      background-image: url('../../assets/ychImages/coupon_bg.png');
+      background-size: 100% 100%;
+      display: flex;
+      align-items: center;
+      color: #fff;
+      .coupon-detail {
+        width: 414px;
+        padding: 0 46px 0 38px;
+        .coupon-detail-value {
+          font-size: 32px;
+          .span {
+            display: inline;
+            font-size: 52px;
+          }
+          .value-num {
+            font-size: 89px;
+            display: inline;
+            font-weight: 900;
+            margin-right: 30px;
+          }
+        }
+        .coupon-detail-vaild {
+          font-size: 22px;
+          letter-spacing: 2px;
+        }
+      }
+      .grab-btn {
+        width: 134px;
+        padding: 0 24px;
+        font-size: 40px;
+        line-height: 46px;
+        color: #fb5f1e;
+        text-align: center;
+      }
+    }
+    .goodstell{
+      width:750px;
+      height:634px;
+      background:rgba(247,247,247,1);
+      margin-top: 34px;
+      .goodscontainer{
+        width: 100%;
+        height: 500px;
+        overflow-x: auto;
+        overflow-y: hidden;
+        .goodsbox{
+          height: 500px;
+          .goodsendswiper{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 100%;
+            .goodsendswiperitem{
+              width: 344px;
+              height: 500px;
+              .goodsitem{
+                width: 344px;
+                height: 500px;
+                background: #fff;
+                border-radius: 11px;
+                Image{
+                  width: 344px;
+                  height: 336px;
+                }
+                .goodstitle{
+                  width: 100%;
+                  height: 42px;
+                  padding: 0px 12px;
+                  box-sizing: border-box;
+                  display: flex;
+                  justify-content: space-between;
+                  align-items: center;
+                  .goodsname{
+                    overflow: hidden;
+                    text-overflow:ellipsis;
+                    white-space: nowrap;
+                    font-size:31px;
+                    color: #333;
+                    font-weight:500;
+                    width: 288px;
+                  }
+                  .goodspaltform{
+                    display: inline-block;
+                    width: 36px;
+                    height: 36px;
+                    background-image: url("../../assets/ychImages/PDD_Logo2.png");
+                    background-size: 100% 100%;
+                    margin-right: 10px;
+                  }
+                }
+                .goodscoupondetail{
+                  width: 100%;
+                  height: 38px;
+                  margin-top: 4px;
+                  padding: 0px 12px;
+                  box-sizing: border-box;
+                  display: flex;
+                  justify-content: space-between;
+                  align-items: center;
+                  .goodscoupon{
+                    width: 104px;
+                    height: 38px;
+                    background-image: url('../../assets/ychImages/certificate_orange.png');
+                    background-size: 100% 100%;
+                    text-align: center;
+                    line-height: 38px;
+                    font-size:22px;
+                    font-weight:500;
+                    color:rgba(156,96,9,1);
+                    &.nothave{
+                      opacity: 0;
+                    }
+                  }
+                  .returnmoney{
+                    padding: 3px 4px;
+                    background:linear-gradient(180deg,rgba(254,80,130,1) 0%,rgba(242,49,106,1) 100%);
+                    border-radius:4px;
+                    font-size:22px;
+                    line-height: 38px;
+                    text-align: center;
+                    font-weight:500;
+                    color:rgba(255,255,255,1);
+                  }
+                }
+                .goodsmoney{
+                  width: 100%;
+                  height: 40px;
+                  margin-top: 14px;
+                  padding: 0px 12px;
+                  box-sizing: border-box;
+                  display: flex;
+                  justify-content: flex-start;
+                  align-items: flex-end;
+                  position: relative;
+                  .nowmoney{
+                     font-size:43px;
+                     font-weight:bold;
+                     color:rgba(251,44,104,1);
+                    transform: translateY(7px);
+                     .moneylogo{
+                       display: inline;
+                       font-size: 22px;
+                     }
+                  }
+                  .oldmoney{
+                     font-size:24px;
+                     font-weight:500;
+                     color:rgba(194,194,194,1);
+                     text-decoration: line-through;
+                     margin-left: 5px;
+                  }
+                  .havebuy{
+                     position: absolute;
+                     right: 0;
+                     bottom: 5px;
+                     font-size:20px;
+                     font-weight:500;
+                     color:rgba(177,177,177,1);
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      .product-recommend-title {
+        height: 100px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        .product-recommend-title-text {
+          position: relative;
+          font-size: 32px;
+          color: #faa111;
+          &::before {
+            content: "";
+            width: 36px;
+            height: 18px;
+            display: block;
+            position: absolute;
+            top: 50%;
+            left: -60px;
+            transform: translate3d(0, -50%, 0);
+            background: url("../../assets/ychImages/icon_guess.png") no-repeat center center;
+            background-size: 100% 100%;
+          }
+          &::after {
+            content: "";
+            width: 36px;
+            height: 18px;
+            display: block;
+            position: absolute;
+            top: 50%;
+            right: -60px;
+            transform: translate3d(0, -50%, 0);
+            background: url("../../assets/ychImages/icon_guess.png") no-repeat center center;
+            background-size: 100% 100%;
+          }
+        }
+        .product-recommend-title-more {
+          font-size: 24px;
+          color: rgba(51, 51, 51, 0.6);
+          padding: 0 28px;
+        }
+      }
+    }
+  }
+  .product1-container-buybox{
+   width: 100%;
+   height: 98px;
+   background: #fff;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   .home{
+     width: 50px;
+     height: 65px;
+     margin-left: 46px;
+     .homelogo{
+       width: 32px;
+       height: 30px;
+       margin: 0px auto;
+       background-image: url("../../assets/ychImages/home.png");
+       background-size: 100% 100%;
+     }
+     .hometext{
+       font-size:24px;
+       font-weight:500;
+       color:rgba(153,153,153,1);
+     }
+   }
+   .btncontent{
+     margin-right: 28px;
+     width:576px;
+     height:68px;
+     overflow: hidden;
+     border-radius:60px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     .share{
+       width:288px;
+       height:68px;
+       background:linear-gradient(143deg,rgba(120,31,250,1) 0%,rgba(149,1,221,1) 100%);
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       position: relative;
+       Button{
+        position: absolute;
+        top: 0; left: 0;
+        width: 100%; height: 100%;
+        opacity: 0;
+      }
+       .sharelogo{
+         width: 34px;
+         height: 30px;
+         background-image: url('../../assets/ychImages/share1.png');
+         background-size: 100% 100%;
+         margin-right: 12px;
+       }
+       .sharetext{
+         color: #fff;
+         font-size:28px;
+         font-weight:500;
+       }
+      }
+     .buy{
+       width:288px;
+       height:68px;
+       background:linear-gradient(47deg,rgba(252,76,140,1) 0%,rgba(251,44,104,1) 100%);
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       .buylogo{
+        width: 38px;
+        height: 38px;
+        background-image: url('../../assets/ychImages/buy.png');
+        background-size: 100% 100%;
+        margin-right: 12px;
+      }
+      .buytext{
+        color: #fff;
+        font-size:28px;
+        font-weight:500;
+      }
+    }
+   }
+  }
+}

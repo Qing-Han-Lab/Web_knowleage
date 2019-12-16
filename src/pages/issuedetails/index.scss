@@ -1,0 +1,43 @@
+.issuedetails {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #f7f7f7;
+  overflow: auto;
+
+  .issuedetails-box {
+    width: 678px;
+    min-height: 20px;
+    background: #FFFFFF;
+    border-radius: 8px;
+    margin: 18px auto;
+    padding: 30px 20px 30px 0px;
+    overflow: hidden;
+
+    .issuedetails-box-title {
+      font-size: 28px;
+      color: #333;
+      margin-left: 32px;
+    }
+
+    .issuedetails-box-text {
+      display: flex;
+      color: rgba(51, 51, 51, 0.6);
+      font-size: 22px;
+      margin-top: 16px;
+      margin-left: 32px;
+
+      .issuedetails-box-text-reply {
+        margin-left: 10px;
+
+        .issuedetails-box-text-reply1 {
+          margin: 10px 0px;
+        }
+
+      }
+    }
+  }
+
+}

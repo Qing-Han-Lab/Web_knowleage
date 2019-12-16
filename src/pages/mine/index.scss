@@ -1,0 +1,427 @@
+.mine-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #f7f7f7;
+  overflow: hidden;
+
+  .cvsbox {
+    position: absolute;
+    top: -2000px;
+    width: 1052px;
+    height: 1872px;
+  }
+
+  .boxshadow {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.69);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 10;
+    &.hide {
+      display: none;
+    }
+
+    .close {
+      width: 64px;
+      height: 64px;
+      background-image: url("../../assets/ychImages/close.png");
+      background-size: 100% 100%;
+      position: absolute;
+      top: 218px;
+      right: 52px;
+
+      &.maketop {
+        top: 2px;
+        right: 48px;
+      }
+    }
+
+    .getmoneywarn {
+      width: 570px;
+      height: 716px;
+
+      Image {
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    .wechatbox {
+      width: 520px;
+      height: 520px;
+      background-color: #ffffff;
+      border-radius: 8px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin-top: -260px;
+      margin-left: -260px;
+      overflow: hidden;
+
+      Image {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+
+      .wechattext {
+        position: absolute;
+        width: 100%;
+        color: #666666;
+        top: 184px;
+        text-align: center;
+      }
+
+      .wechatcode {
+        width: 100%;
+        top: 260px;
+        font-size: 36px;
+        color: #333333;
+        text-align: center;
+        position: absolute;
+      }
+
+      .autocopy {
+        width: 100%;
+        top: 6px;
+        font-size: 24px;
+        color: #666666;
+        text-align: center;
+        position: absolute;
+      }
+
+      .gowechatbtn {
+        width: 280px;
+        height: 60px;
+        background-image: linear-gradient(135deg, #f93579 0%, #fa1f6b 100%);
+        border-radius: 30px;
+        top: 380px;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 28px;
+        text-align: center;
+        line-height: 60px;
+        color: #fff;
+        position: absolute;
+      }
+    }
+
+    .advbox {
+      width: 526px;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      &.hide {
+        display: none;
+      }
+
+      .advback {
+        position: relative;
+        width: 526px;
+        height: 936px;
+        display: block;
+        Image {
+          width: 100%;
+          height: 100%;
+        }
+
+        .qr_codebox {
+          position: absolute;
+          top: 728px;
+          right: 34px;
+          width: 150px;
+          height: 180px;
+
+          Image {
+            width: 100%;
+            height: 150px;
+          }
+
+          .qrcodetext {
+            width: 100%;
+            text-align: center;
+            color: #fff;
+            font-size: 12px;
+            margin-top: 10px;
+          }
+        }
+      }
+
+      .btnbox {
+        width: 100%;
+        height: 66px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        .invitbtn,
+        .savebtn {
+          width: 200px;
+          height: 66px;
+          border-radius: 30px;
+          background: #FCA50D;
+          text-align: center;
+          line-height: 66px;
+          color: #fff;
+          font-size: 26px;
+          font-weight: 500;
+          position: relative;
+
+          &.pink {
+            background: #ff8f59;
+          }
+
+          Button {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            opacity: 0;
+          }
+        }
+      }
+    }
+  }
+
+  .containertop {
+    width: 750px;
+    height: 136px;
+    line-height: 136px;
+    padding: 0px 26px;
+    box-sizing: border-box;
+    background: #fb2c68;
+    font-size: 48px;
+    font-weight: 500;
+    color: #fff;
+  }
+
+  .containeruser {
+    width: 750px;
+    height: 122px;
+    background: linear-gradient(180deg, rgba(251, 44, 104, 1) 0%, rgba(247, 247, 247, 1) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+
+    .userbox {
+      background: #fff;
+      width: 698px;
+      height: 128px;
+      border-radius: 8px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .userpic {
+        /* width: 88px; */
+        height: 88px;
+        margin-left: 32px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+
+        Image {
+          width: 88px;
+          height: 88px;
+          border-radius: 50%;
+          margin-right: 20px;
+        }
+
+        .username {
+          font-size: 32px;
+          font-weight: 500;
+        }
+      }
+
+      .takefriend {
+        width: 160px;
+        height: 52px;
+        background-image: url("../../assets/ychImages/takefriend.png");
+        background-size: 100% 100%;
+
+        Button {
+          width: 100%;
+          height: 100%;
+          opacity: 0;
+        }
+      }
+    }
+  }
+
+  .moneycontainer {
+    width: 698px;
+    height: 174px;
+    margin: 18px auto 0px;
+    background-image: url("../../assets/ychImages/money_back.png");
+    background-size: 100% 100%;
+    overflow: hidden;
+
+    .moneytextbox {
+      width: 100%;
+      height: 34px;
+      padding: 0px 16px;
+      margin-top: 18px;
+      box-sizing: border-box;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      color: #333;
+      font-size: 26px;
+      font-weight: 500;
+
+      .moneytextlogo {
+        width: 34px;
+        height: 34px;
+        background-size: 100% 100%;
+        background-image: url("../../assets/ychImages/moneylogo.png");
+        margin-right: 12px;
+      }
+    }
+
+    .moneynumbox {
+      width: 100%;
+      height: 96px;
+      padding: 0px 16px;
+      box-sizing: border-box;
+      margin-top: 12px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .havemoney {
+        font-size: 68px;
+        font-weight: bold;
+        color: rgba(251, 44, 104, 1);
+
+        .money_icon {
+          font-size: 26px;
+          display: inline;
+        }
+      }
+
+      .getmoney {
+        width: 132px;
+        height: 44px;
+        background: #FCA50D;
+        color: #fff;
+        border-radius: 20px;
+        text-align: center;
+        line-height: 44px;
+        font-size: 28px;
+        font-weight: 500;
+      }
+    }
+  }
+
+  .selectbox {
+    width: 698px;
+    margin: 18px auto 0px;
+    padding: 26px 20px;
+    box-sizing: border-box;
+    background: #fff;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    .selectitem {
+      &:last-child .AAA {
+        border: 0;
+      }
+
+      width: 100%;
+      // height: 36px;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+
+      .AAA {
+        height: 100px;
+        line-height: 100px;
+        width: 600px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid #F2F2F2;
+      }
+
+      .itemtext {
+        text-indent: 50px;
+        height: 36px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 26px;
+        font-weight: 500;
+        color: rgba(102, 102, 102, 1);
+
+        .logo {
+          width: 30px;
+          height: 30px;
+          margin-left: -50px;
+          margin-right: 20px;
+
+        }
+      }
+
+      .todetail {
+        width: 24px;
+        height: 24px;
+        background-image: url('../../assets/ychImages/godetail.png');
+        background-position: 0px center;
+        background-repeat: no-repeat;
+        background-size: 14px 24px;
+      }
+    }
+  }
+}
+
+.noToken-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #f7f7f7;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .noToken-back {
+    width: 284px;
+    height: 382px;
+    Image{
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .noToken-text {
+    color: #666;
+  }
+
+  .noToken-login {
+    margin-top: 20px;
+    width: 220px;
+    height: 60px;
+    background: rgba(251, 44, 104, 1);
+    border-radius: 30px;
+    text-align: center;
+    line-height: 60px;
+    color: #fff;
+  }
+}

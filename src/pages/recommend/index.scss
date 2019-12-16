@@ -1,0 +1,114 @@
+.recommend {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+  background-color: #f7f7f7;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  .recommend-box {
+    width: 344px;
+    height: 530px;
+    background: rgba(255, 255, 255, 1);
+    border-radius: 11px;
+    margin: 10px 15px;
+    overflow: hidden;
+
+    .recommend-box-img {
+      width: 344px;
+      height: 366px;
+
+      image {
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    .recommend-box-name {
+      display: flex;
+      margin-top: 6px;
+      margin-left: 16px;
+
+      .recommend-box-name-left {
+        width: 36px;
+        height: 36px;
+        background: url('../../assets/images/pinduoduo-logo.png') no-repeat;
+        background-size: 36px 36px;
+        margin-top: 5px;
+      }
+
+      .recommend-box-name-right {
+        width: 288px;
+        height: 42px;
+        margin-left: 4px;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 1;
+        overflow: hidden;
+        font-size: 31px;
+        color: #333;
+      }
+    }
+
+    .recommend-box-discounts {
+      display: flex;
+      justify-content: space-around;
+      margin-top: 2px;
+      line-height: 38px;
+      font-size: 22px;
+      text-align: center;
+
+      .recommend-box-discounts-left {
+        width: 104px;
+        height: 38px;
+        background: url('../../assets/images/recommend-b1.png') no-repeat;
+        background-size: 104px 38px;
+        color: #9C6009;
+      }
+
+      .recommend-box-discounts-right {
+        width: 128px;
+        height: 38px;
+        background: url('../../assets/images/recommend-b2.png') no-repeat;
+        background-size: 128px 38px;
+        color: #fff;
+      }
+    }
+    .recommend-box-price{
+      display: flex;
+      margin-left: 16px;
+      .recommend-box-price-left{
+        display: flex;
+        color: #FB2C68;
+        .recommend-box-price-left-icon{
+          font-size: 22px;
+          margin-top: 18px;
+        }
+        .recommend-box-price-left-numer{
+          font-size: 43px;
+        }
+      }
+      .recommend-box-price-right{
+        width: 200px;
+        height: 25px;
+        margin-left: 4px;
+        line-height: 25px;
+        margin-top: 20px;
+        display: flex;
+        justify-content: space-around;
+        .recommend-box-price-right-dis{
+          font-size: 24px;
+          color: #C2C2C2;
+          text-decoration: line-through;
+        }
+        .recommend-box-price-right-rob{
+          color: #B1B1B1;
+          font-size: 20px;
+        }
+      }
+    }
+  }
+}

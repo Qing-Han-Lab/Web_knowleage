@@ -1,0 +1,50 @@
+.invitelogin {
+  .invitelogin-input {
+    line-height: 80px;
+    margin: 60px 0 0 20px;
+    font-size: 36px;
+    color: #333;
+  }
+
+
+  .invitelogin-info {
+    width: 710px;
+    height: 155px;
+    margin: 120px auto 0px;
+    display: flex;
+
+    .invitelogin-info-left {
+      image {
+        width: 154px;
+        height: 154px;
+        margin-right: 20px;
+      }
+    }
+
+    .invitelogin-info-right {
+      color: #333;
+
+      .invitelogin-info-right-name {
+        margin-top: 24px;
+        margin-bottom: 14px;
+        font-size: 48px;
+      }
+
+      .invitelogin-info-right-text {
+        font-size: 36px;
+      }
+    }
+  }
+
+  .invitelogin-btn {
+    width: 710px;
+    height: 90px;
+    background-color: #FB2C68;
+    border-radius: 8px;
+    margin: 100px auto 0px;
+    font-size: 32px;
+    color: #fff;
+    text-align: center;
+    line-height: 90px;
+  }
+}
